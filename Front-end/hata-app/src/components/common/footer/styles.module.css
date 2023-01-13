@@ -1,0 +1,183 @@
+footer {
+  background-color: #000000;
+  padding: 0px 20px 0px 20px;
+}
+.mainMenuLogo {
+  color: white;
+  font-weight: 900;
+  font-size: 34px;
+}
+.container {
+  padding: 0 15px;
+}
+.footerBox .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.footerBox .footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.footerBox .footer nav a {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.footerBox .footer nav a:nth-of-type(2) {
+  margin: 0 50px;
+}
+.footerBox .footer .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (min-width: 1330px) {
+  .container {
+    padding: 0 calc(50vw - 750px);
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+.socials a {
+  display: flex;
+  margin: 0 5px;
+  padding: 6px;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+a {
+  background-color: transparent;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: 1px solid #484848;
+  color: #fff;
+  padding: 8px 0;
+}
+.copyright .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}
+.logoItems {
+  color: #fff;
+  font-size: 15px;
+}
+.btn {
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #4269cf;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 20px;
+  height: 50px;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 200px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.logoDescription {
+  font-size: 18px !important;
+  flex-direction: column;
+}
+.logoDescription a {
+  font-size: 16px !important;
+}
+
+@media (max-width: 992px) {
+  .footerBox .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+  }
+  .footerBox .footer nav {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    padding: 30px 0;
+  }
+  .footerBox .footer .buttons {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    border-bottom: 1px solid #484848;
+    width: calc(100% + 30px);
+    padding: 30px 0;
+  }
+}
+.socials > a:hover {
+  background: rgba(249, 249, 249, 0.2);
+}
+@media (max-width: 480px) {
+  .footerBox .footer nav {
+    flex-direction: column;
+  }
+  .footerBox .footer nav a {
+    line-height: 35px;
+  }
+  .buttons{
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,45 @@
+.blockHeading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.blockHeading h3 {
+  font-size: 32px;
+  line-height: 52px;
+  font-weight: 700;
+  text-transform: none;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.blockHeading p {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  margin: 0;
+}
+
+
+@media (max-width: 756px) {
+  .blockHeading p {
+    font-size: 18px;
+    line-height: 42px;
+    font-weight: 500 !important;
+    max-width: 870px;
+    margin: 0 auto;
+  }
+}
+
+.smallCardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /*justify-content: center;
+  align-items: center;*/
+  flex-wrap: wrap;
+}

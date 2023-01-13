@@ -1,0 +1,45 @@
+.rootWrapper {
+  padding: 0 10px 10px 10px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.logoutContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btnWhite {
+  color: #000;
+  border: 5px solid #000;
+  background: #fff;
+}
+
+.btn {
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 50px;
+  border-radius: 25px;
+  width: 200px;
+  transition: all 0.4s;
+  cursor: pointer;
+  color: white;
+  margin-right: 20px;
+}
+.btnWhite:hover {
+  /*color: #000000 !important;*/
+  background: #ff0000 !important;
+}

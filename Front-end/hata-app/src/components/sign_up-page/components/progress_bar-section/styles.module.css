@@ -1,0 +1,61 @@
+.wrapper {
+  margin: 35px 0px 15px 0px;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+}
+.progressBar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 90%;
+  height: 0;
+  border-top: 1px dashed rgba(0, 0, 0, 0.5);
+  max-width: 380px;
+}
+.step {
+  height: auto;
+  width: 50%;
+  float: right;
+  position: relative;
+  top: -10px;
+}
+.step img {
+  float: right;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(255, 255, 255);
+}
+.rootCustomInputWrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.progressBar:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -18px;
+  transform: translate(0, -50%);
+  background: url(../../../../assets/images/sign-up/step_fill.svg);
+  background-size: cover !important;
+  width: 18px;
+  height: 18px;
+  transition: all 0.4s;
+}
+@media (max-width: 1000px) {
+  .wrapper {
+    margin: 35px 0px 15px 0px;
+    width: 45%;
+  }
+}
+
+@media (max-width: 758px) {
+  .wrapper {
+    margin: 35px 0px 15px 0px;
+    width: 80%;
+  }
+}

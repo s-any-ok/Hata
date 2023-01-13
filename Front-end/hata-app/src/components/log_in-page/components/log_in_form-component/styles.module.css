@@ -1,0 +1,117 @@
+.rootWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.customInputWrapper {
+  border-radius: 30px;
+  border: 1px solid #d1d1d1;
+  display: flex;
+}
+.inputWrapper {
+  padding: 12px 25px 12px 15px;
+  flex: 1;
+}
+/*  */
+.margin {
+  margin-top: 10px;
+}
+.inputWrapper input {
+  width: 100%;
+  max-width: 390px;
+  border: none;
+  font-size: 14px;
+  color: #313131;
+}
+.customInputLabel {
+  margin: 0;
+  font-size: 12px;
+  transition: 0.4s;
+}
+.rootCustomInputWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.btn {
+  outline: 0;
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 20px;
+  height: 45px;
+  border: none;
+  border-radius: 30px;
+  width: 65%;
+  max-width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+
+  margin-top: 20px;
+}
+.buttonWrapper {
+  width: 80%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.customInputWrapper.invalid {
+  border: 1px solid #cb0000;
+  transition: 0.4s;
+}
+.customInputLabel.invalid {
+  color: #cb0000;
+  transition: 0.4s;
+}
+@media (max-width: 678px) {
+  .btn {
+    flex: 5;
+    width: 100%;
+  }
+  .rootCustomInputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 900px) {
+  .btn {
+    flex: 4;
+    width: 80%;
+  }
+  .rootCustomInputWrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1200px) {
+  .btn {
+    flex: 6;
+    width: 100%;
+  }
+  .rootCustomInputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    padding-left: 25px;
+    flex: 6;
+    width: 90%;
+    font-size: 12px;
+  }
+}

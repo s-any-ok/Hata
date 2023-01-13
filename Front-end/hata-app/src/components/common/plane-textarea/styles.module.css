@@ -1,0 +1,67 @@
+.customInputWrapper {
+  width: 100%;
+  min-height: 160px;
+  min-width: 400px;
+  border-radius: 30px;
+  border: 1px solid #d1d1d1;
+  display: flex;
+  transition: 0.4s;
+}
+.rootCustomInputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.selectWrapper {
+  padding: 12px 10px 12px 20px;
+  flex: 1;
+  border-right: 1px solid #d1d1d1;
+}
+
+.inputWrapper {
+  padding: 12px 20px 12px 20px;
+  flex: 4;
+}
+.inputWrapper textarea {
+  resize: none;
+  border-style: none;
+  border-color: Transparent;
+  overflow: auto;
+  width: 100%;
+}
+/*  */
+.margin {
+  margin-top: 20px;
+}
+.selectOption {
+  padding: 10px !important;
+  border: none;
+  transition: 0.3s !important;
+}
+
+.inputWrapper input {
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  color: #313131;
+}
+.customInputLabel {
+  margin: 0;
+  font-size: 12px;
+  transition: 0.4s;
+}
+
+/*validation*/
+.customInputWrapper.invalid {
+  border: 1px solid #cb0000;
+  transition: 0.4s;
+}
+.customInputLabel.invalid {
+  color: #cb0000;
+  transition: 0.4s;
+}
+@media (max-width: 678px) {
+}
+@media (max-width: 900px) {
+}
+@media (max-width: 1200px) {
+}

@@ -1,0 +1,56 @@
+.rootWrapper {
+  padding: 0 10px 10px 10px;
+}
+.infoBlock {
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+}
+.infoBlockTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.editButton {
+  text-align: right;
+}
+.editButton p {
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+  font-size: 16px;
+}
+.infoBlock:first-of-type {
+  margin-top: 0;
+}
+
+.infoField {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.infoField h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.375em;
+  color: black;
+  margin: 0;
+  text-transform: none;
+}
+
+.infoField p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.43;
+  color: #484848;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+

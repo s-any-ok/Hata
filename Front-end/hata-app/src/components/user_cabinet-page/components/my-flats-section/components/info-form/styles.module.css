@@ -1,0 +1,83 @@
+.rootWrapper {
+  display: block;
+}
+.rootWrapper h3 {
+  font-size: 20px;
+}
+.fieldsWrapper {
+  display: flex;
+  flex-direction: row;
+}
+.fieldsGroup {
+  /*width: 40%;*/
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.fieldsGroupRow {
+  display: flex;
+  flex-direction: row;
+}
+.fieldsGroupRow div:first-child {
+  margin-right: 20px;
+}
+.btnText {
+  cursor: pointer;
+  margin-top: 25px;
+  border: none;
+  background: transparent;
+  font-size: 17px;
+  height: 45px;
+  display: flex;
+  text-decoration: underline;
+  border-radius: 25px;
+  max-width: 150px;
+  transition: all 0.5s;
+  margin-right: 40px;
+}
+.btn {
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 25px 20px;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  width: 80%;
+  max-width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+}
+.buttonWrapper {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+/*validation*/
+.customInputWrapper.invalid {
+  border: 1px solid #cb0000;
+  transition: 0.4s;
+}
+.customInputLabel.invalid {
+  color: #cb0000;
+  transition: 0.4s;
+}
+
+@media (max-width: 890px) {
+  .fieldsWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .fieldsGroup {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1330px) {
+  .container {
+    padding: 0 calc(50vw - 650px);
+  }
+}

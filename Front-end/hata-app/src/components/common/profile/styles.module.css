@@ -1,0 +1,77 @@
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.profileContainerCol {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileContainerCol:first-child {
+  width: auto;
+}
+
+.profileContent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.profileContentTitle {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 600;
+  text-transform: none;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.profileContentJoined {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(113, 113, 113);
+  margin: 0;
+}
+
+.profileContentEdit {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  text-decoration: underline;
+  margin-top: 32px;
+}
+
+.profileImage {
+  width: 130px;
+  height: 130px;
+  border-radius: 80px;
+  margin-bottom: 5px;
+}
+.profileImageText {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.smallCardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.smallCardInfo h5 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.smallCardInfo p {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+}

@@ -1,0 +1,94 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.contentInfo {
+  display: flex;
+  flex-direction: row;
+}
+.contentInfoCol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.contentInfoCol:first-child {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  width: 70%;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+.location {
+  margin: 0;
+  margin-bottom: 5px;
+  text-transform: none;
+}
+.mainImage {
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+}
+.rowItemContainer {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.rowItemContainer h3 {
+  margin: 0;
+  text-transform: none;
+  font-weight: 700;
+}
+
+.rowItemContainer p{
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.btnWhite {
+  color: #000;
+  border: 2px solid #fff;
+  background: #fff;
+}
+.btn {
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 50px;
+  border-radius: 25px;
+  width: 200px;
+  transition: all 0.4s;
+  cursor: pointer;
+  color: white;
+  margin-right: 20px;
+}
+.btnWhite:hover {
+  color: #b9b6b6 !important;
+  border: 2px solid #000 !important;
+  background: #000 !important;
+}
+.btnSave:hover{
+  color: #ffafaf !important;
+  border: 2px solid #ffa1a1 !important;
+}
+@media (min-width: 1330px) {
+  .container {
+    padding: 0 calc(50vw - 650px);
+  }
+}

@@ -1,0 +1,97 @@
+.homeBannerButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 -10px;
+}
+.text {
+  font-size: 16px;
+  text-align: center;
+}
+.hoverArrow {
+  position: relative !important;
+  padding-right: 15px !important;
+  transition: all 0.4s !important ;
+}
+.hoverArrow::before {
+  right: auto;
+  left: -20px;
+  opacity: 0;
+}
+.hoverArrow::after,
+.hoverArrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: url(/src/assets/images/right-arrow.png) no-repeat center;
+  width: 30px;
+  height: 10px;
+  transition: all 0.4s;
+}
+.hoverArrow::after {
+  right: 15px;
+  left: auto;
+  opacity: 1;
+}
+.hoverArrow:hover::after {
+  right: -20px;
+  left: auto;
+  opacity: 0;
+}
+.hoverArrow:hover {
+  padding-left: 60px !important;
+}
+.hoverArrow:hover::before {
+  right: auto;
+  left: 15px;
+  opacity: 1;
+}
+.bottomBtn {
+  margin-top: 15px;
+}
+.btn {
+  text-transform: uppercase;
+  outline: 0;
+  display: flex;
+  padding-left: 35px !important;
+  align-items: center;
+  background: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 20px;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  width: 60%;
+  max-width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+}
+.buttonWrapper {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.margin {
+  margin-top: 15px;
+}
+@media (max-width: 678px) {
+  .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .btn {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .btn {
+    width: 100%;
+  }
+}

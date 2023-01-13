@@ -1,0 +1,64 @@
+.rootWrapper {
+  padding: 0 10px 10px 10px;
+}
+.infoBlock {
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+}
+.infoBlock:first-of-type {
+  margin-top: 0;
+}
+.infoBlock h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.infoField {
+  width: 100%;
+  background-color: #f7f9fd;
+  padding: 15px 30px 15px 30px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infoField p {
+  width: 50%;
+  text-align: right;
+  font-size: 15px;
+}
+.infoField p:first-of-type {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+}
+.addMoreWrapper {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.addMoreWrapper img {
+  cursor: pointer;
+  height: 20px;
+  width: auto;
+}
+.addMoreWrapper p {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #4269cf;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+@media (max-width: 890px) {
+  .infoField {
+    padding: 10px 15px 10px 15px;
+  }
+  .infoField p {
+    width: 50%;
+    text-align: right;
+    font-size: 12px;
+  }
+}

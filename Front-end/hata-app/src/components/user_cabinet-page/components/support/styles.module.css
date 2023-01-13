@@ -1,0 +1,65 @@
+.rootWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+.text {
+  font-size: 24px;
+  font-weight: 600;
+}
+.margin {
+  margin-top: 20px;
+}
+.sectionMargin {
+  margin-top: 60px;
+}
+.textAreaWrapper {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  resize: vertical;
+}
+.label {
+  margin: 0;
+  font-size: 12px;
+  transition: 0.4s;
+}
+.textAreaWrapper textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #d1d1d1;
+}
+.btn {
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 20px;
+  height: 50px;
+  border-radius: 25px;
+  width: 100%;
+  color: white;
+  border: none;
+  max-width: 200px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+@media (max-width: 890px) {
+  .text {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

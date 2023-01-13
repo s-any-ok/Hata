@@ -1,0 +1,91 @@
+.fullBanner {
+  background-size: cover;
+  height: calc(100vh - 120px);
+  width: 100vw;
+  position: relative;
+  display: flex;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  color: #fff;
+  padding-top: 141px;
+}
+.fullBackground {
+  background: url("../../../../assets/images/dorm_room_wallpaper.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+.fullBannerWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 45px;
+}
+.fullBannerTitle p{
+  font-size: 40px ;
+  line-height: 50px;
+  font-weight: 800;
+  max-width: 820px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.fullBannerForm {
+  max-width: 260px;
+}
+.fullBanner .btn {
+  min-width: 200px;
+}
+.btnWhite {
+  color: #000;
+  border: 2px solid #fff;
+  background: #fff;
+}
+.btn {
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 50px;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 200px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.btnWhite:hover {
+  color: #fff !important;
+  border: 2px solid #000 !important;
+  background: #000 !important;
+}
+@media (min-width: 992px) {
+  .fullBannerTitle {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .fullBannerWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 calc(50vw - 750px);
+  }
+  .fullBannerTitle p{
+    font-size: 50px ;
+    line-height: 75px;
+    font-weight: 800;
+    max-width: 820px;
+    margin: 0;
+  }
+  .fullBannerDescription {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 820px;
+    margin-bottom: 43px;
+  }
+}

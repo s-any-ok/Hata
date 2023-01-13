@@ -1,0 +1,186 @@
+.text {
+  font-size: 16px;
+  text-align: center;
+}
+.rootWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customInputWrapper {
+  border-radius: 30px;
+  border: 1px solid #d1d1d1;
+  display: flex;
+}
+.inputWrapper {
+  padding: 12px 25px 12px 15px;
+  flex: 1;
+}
+/*  */
+.margin {
+  margin-top: 15px;
+}
+.inputWrapper input {
+  max-width: 390px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  color: #313131;
+}
+.customInputLabel {
+  margin: 0px;
+  font-size: 12px;
+  transition: 0.4s;
+}
+.rootCustomInputWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+.btnText {
+  flex: 1;
+  cursor: pointer;
+  margin-top: 25px;
+  border: none;
+  background: transparent;
+  font-size: 17px;
+  height: 45px;
+  display: flex;
+  text-decoration: underline;
+  border-radius: 25px;
+  max-width: 200px;
+  transition: all 0.5s;
+  margin-right: 40px;
+}
+.bottomBtn {
+  margin-top: 15px;
+}
+.btn {
+  text-transform: uppercase;
+  outline: 0;
+  display: flex;
+  padding-left: 35px !important;
+  align-items: center;
+  background: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 20px;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  width: 65%;
+  max-width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+}
+.buttonWrapper {
+  width: 80%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.hoverArrow {
+  position: relative !important;
+  padding-right: 15px !important;
+}
+.hoverArrow::before {
+  right: auto;
+  left: -20px;
+  opacity: 0;
+}
+.hoverArrow::after,
+.hoverArrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: url(/src/assets//images/right-arrow.png) no-repeat center;
+  color: white;
+  width: 30px;
+  height: 10px;
+  transition: all 0.4s;
+}
+.hoverArrow::after {
+  right: 15px;
+  left: auto;
+  opacity: 1;
+}
+.hoverArrow:hover::after {
+  right: -20px;
+  left: auto;
+  opacity: 0;
+}
+.hoverArrow:hover {
+  padding-left: 60px !important;
+}
+.hoverArrow:hover::before {
+  right: auto;
+  left: 15px;
+  opacity: 1;
+}
+/*validation*/
+.customInputWrapper.invalid {
+  border: 1px solid #cb0000;
+  transition: 0.4s;
+}
+.customInputLabel.invalid {
+  color: #cb0000;
+  transition: 0.4s;
+}
+@media (max-width: 678px) {
+  .btn {
+    flex: 5;
+    width: 100%;
+  }
+  .buttonWrapper {
+    width: 100%;
+    margin: 10px 10px 10px 10px !important;
+  }
+  .rootCustomInputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .btn {
+    flex: 4;
+    width: 80%;
+  }
+  .buttonWrapper {
+    width: 80%;
+    margin: 10px 10px 10px 10px !important;
+  }
+  .rootCustomInputWrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1200px) {
+  .btn {
+    flex: 6;
+    width: 100%;
+  }
+  .buttonWrapper {
+    width: 100%;
+  }
+  .rootCustomInputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .btnText {
+    flex: 1;
+    margin-right: 15px;
+  }
+  .btn {
+    padding-left: 25px;
+    flex: 6;
+    width: 90%;
+    font-size: 12px;
+  }
+}
